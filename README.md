@@ -36,9 +36,9 @@
 
 👤 **Yishak Tadele**
 
-- GitHub: [Yishak Tadele](https://github.com/AntenehTilaye)
-- LinkedIn: [Yishak Tadele](https://www.linkedin.com/in/anteneh-tilaye-bb6770149/)
-- Website: [Yishak Tadele Demo Porfolio](https://antenehtilaye.github.io/)
+- GitHub: [Yishak Tadele](https://github.com/isaaclucky)
+- LinkedIn: [Yishak Tadele](https://www.linkedin.com/in/yishak-tadele/)
+- Website: [Yishak Tadele Porfolio](http://yishaktadele.freecluster.eu/)
 
 ## Show US your support
 
