@@ -2,6 +2,18 @@
 
 10 Academy Batch 6 - Weekly Challenge: Week 2 - A/B Hypothesis Testing: Ad campaign performance
 
+**Table of content**
+
+- [Introduction](#introduction)
+- [Overview](#overview)
+- [Install](#install)
+- [Data](#data)
+- [Notebooks](#notebooks)
+- [Models](#models)
+- [Scripts](#scripts)
+- [Test](#test)
+- [Authors](#authors)
+
 ## Authors
 
 👤 **Anteneh Tilaye**
