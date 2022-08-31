@@ -24,9 +24,9 @@
 
 👤 **Birhanu Gebisa**
 
-- GitHub: [Birhanu Gebisa](https://github.com/AntenehTilaye)
-- LinkedIn: [Birhanu Gebisa](https://www.linkedin.com/in/anteneh-tilaye-bb6770149/)
-- Website: [Birhanu Gebisa Demo Porfolio](https://antenehtilaye.github.io/)
+- GitHub: [Birhanu Gebisa](https://github.com/BirhanuGebisa)
+- LinkedIn: [Birhanu Gebisa](https://www.linkedin.com/in/birhanu-gebisa2721/)
+- Website: [Birhanu Gebisa Demo Porfolio](https://github.com/BirhanuGebisa.github.io/)
 
 👤 **Genet Shanko**
 
