@@ -1,21 +1,33 @@
-FROM ubuntu:18.04
-FROM python:3.8-slim
-
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
-# Install pip requirements
-COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
-
-# informs Docker that the container listens on the specified network ports at runtime. 
-EXPOSE 8501
+FROM continuumio/anaconda3
+LABEL Author="Anteneh-Birhanu-Genet-Yishak"
 
 WORKDIR /app
-COPY . /app
 
-RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
-USER appuser
 
-ENTRYPOINT ["streamlit", "run"]
-CMD ["app.py"]
+# RUN apt-get update && apt-get install -y libgtk2.0-dev && \
+#     rm -rf /var/lib/apt/lists/*
+
+RUN /opt/conda/bin/conda update -n base -c defaults conda && \
+    /opt/conda/bin/conda install python=3.6 && \
+    /opt/conda/bin/conda install anaconda-client && \
+    /opt/conda/bin/conda install jupyter -y && \
+    # /opt/conda/bin/conda install --channel https://conda.anaconda.org/menpo opencv3 -y && \
+    /opt/conda/bin/conda install numpy pandas scikit-learn matplotlib seaborn pyyaml h5py keras -y && \
+    /opt/conda/bin/conda upgrade dask && \
+    pip install tensorflow imutils
+
+RUN ["mkdir", "notebooks"]
+COPY conf/.jupyter /root/.jupyter
+COPY run_jupyter.sh /
+
+# Jupyter and Tensorboard ports
+EXPOSE 8888 6006
+
+# Store notebooks in this mounted directory
+VOLUME /notebooks
+
+CMD ["/run_jupyter.sh"]
+
+# command to run this container
+# docker run -it -p 8888:8888 -p 6006:6006 -d -v $(pwd)/notebooks:/notebooks python_data_science_container:anaconda
+

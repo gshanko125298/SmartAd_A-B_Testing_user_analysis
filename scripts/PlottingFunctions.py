@@ -129,4 +129,5 @@ class PlottingFunctions:
                             where=(x < right))
             ax.text(-1 * stderr, null.pdf(0),
                     'beta = {0:.3f}'.format(alternative.cdf(right)),
+                    
                     fontsize=12, ha='right', color='k')
