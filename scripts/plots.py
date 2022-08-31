@@ -14,7 +14,7 @@ class visualize:
         self.alpha = alpha
         self.beta = beta
         self.stop = stop
-   #plots class
+   #plots the AB testing class
     def transform_data(df):
         
         '''
