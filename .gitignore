@@ -1,1 +1,3 @@
-data/
+/data
+scripts/__pycache_
+notebooks/.ipynb_checkpoints_
