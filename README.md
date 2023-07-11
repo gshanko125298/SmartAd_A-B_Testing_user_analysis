@@ -1,6 +1,6 @@
 # SmartAd AB Testing User Analysis
 
-10 Academy Batch 6 - Weekly Challenge: Week 2 - A/B Hypothesis Testing: Ad campaign performance
+A/B Hypothesis Testing: Ad campaign performance
 
 **Table of content**
 
